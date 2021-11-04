@@ -1,0 +1,289 @@
+h1{
+    text-align: center;
+    color: brown;
+}
+
+/*Universal slector*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Tag/Element selector*/
+h4{
+   /* color:red;text*/
+  /* color: #f00;short hex*/
+  /*color:#ff0000;hex*/
+  color: rgb(255,0,0);
+  word-spacing: 20px;
+  line-height: 50px;
+  text-indent: 40px;
+
+}
+/*attribute selector*/
+a[title="google"]{
+    text-decoration: none;
+    color: green;
+}
+
+/*id selector*/
+#idselector{
+    color: green;
+    letter-spacing: 10px;
+    text-align: justify;
+    text-indent: 50px;
+}
+.classselector{
+    color: brown;
+    line-height: 30px;
+    word-spacing: 40px;
+    text-indent: 50px;
+}
+/*Descendent Selector*/
+p a{
+    color: red;
+}
+
+/*Child Selector*/
+p.child>a{
+    color: green;
+}
+
+/*Pseudo Selector*/
+a:link{
+    color: red;
+}
+
+a:hover{
+    color:green;
+
+}
+
+a:active{
+    color: yellow;
+}
+
+a:visited{
+    color: pink;
+}
+
+/*Target Selector*/
+div:target{
+    color: red;
+    border:1px solid black ;
+
+}
+/*Student reg*/
+form{
+    width: 80%;
+    margin: auto;
+}
+input[type="text"],input[type="number"],input[type="email"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+input[type="text"]:focus,input[type="number"]:focus,input[type="email"]:focus{
+    border: 3px solid#555;
+}
+#dob{
+    width: 90%;
+}
+div#dob select{
+    width: 30%;
+    height: 40px;
+    outline: none;
+}
+#adress{
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+}
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+input[type="checkbox"]:enabled+label{
+    color:red;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked+label{
+    color: yellow;
+    font-style: normal;
+}
+input[type="checkbox"]:disabled+label{
+    color: #fff;
+}
+
+#fieldset p{
+    text-indent: 50px;
+}
+ul li{
+    margin-left: 50px;
+    line-height: 40px;
+}
+li:first-child{
+    background-color: red;
+    width: 80%;
+}
+li:last-child{
+    background-color: green;
+    width: 80%;
+}
+li:nth-child(4){
+    background-color: yellow;
+    width: 80%;
+}
+p:empty{
+    background-color: #60708B;
+    height: 20px;
+}
+.thankyou{
+    text-align: center;
+}
+
+.borderone{
+    border: 1px dotted #f00;
+}
+.bordertwo{
+    border-left: 4px solid yellow;
+}
+
+.borderstyle{
+    border-style: double;
+    /*all*/
+}
+.mix{
+   /* border-style: solid dashed;*/
+   /*T/B & L&R*/
+  /* border-style: solid dotted double;*/
+  /*T& L/R& B*/
+  border-style: solid dotted double dashed;
+  /*T/R/B/L*/
+}
+
+.bwidth{
+    border-width: 2px 6px 10px 15px;
+    border-style: solid;
+}
+/*margin*/
+.marginone{
+    margin: 15px;
+    border: 1px solid black;
+}
+.margintwo{
+    margin: 10px 20px;
+    border: 1px solid red;
+}
+.marginthree{
+    margin: 5px 15px 30px;
+    border: 1px solid yellow;
+}
+.marginfour{
+    /*margin: 5px 10px 5px 40px*/
+    margin-left: 40px;
+    border: 1px solid black;
+}
+/*padding*/
+.padding{
+    border: 1px solid red;
+    padding-top: 50px;
+}
+/*layout*/
+.google{
+    border: 1px solid red;
+    width: 400px;
+    display:inline-block ;
+}
+.block{
+    border:1px solid black ;
+    width: 400px;
+    display: inline-block;
+}
+.floatleft img{
+    width: 400px;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.float_right img{
+    width: 400px;
+    float: right;
+}
+
+/*Grid*/
+.gridone div,.gridtwo div,.gridthree div,.gridfour div,.gridfive div,.gridsix div{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.gridone,.gridtwo,.gridthree,.gridfour,.gridfive,.gridsix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.gridtwo{
+    grid-column-gap:40px ;
+}
+
+.gridthree{
+    grid-row-gap: 40px;
+}
+.gridfour{
+    grid-gap:40px;
+}
+.addcolumn{
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.addrow{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.relative_parent{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
+.relative{
+    border: 1px solid yellow;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.absolute_parent{
+    position: relative;
+    border: 1px solid black;
+    width:1000px;
+    height: 600px;
+    
+}
+.absolute{
+    border: 1px solid red;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    left: 100px;
+}
+.online{
+    font-family: 'Qahiri', sans-serif;
+}
+@font-face {
+    font-family: bold;
+    src: url(font/OpenSansCondensed-Bold.ttf);
+}
+.offline{
+    font-family: bold;
+}
